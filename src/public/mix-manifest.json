@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/bootstrap.js": "/js/bootstrap.js",
-    "/css/reset.css": "/css/reset.css"
+    "/css/common.css": "/css/common.css",
+    "/css/reset.css": "/css/reset.css",
+    "/css/contact.css": "/css/contact.css"
 }

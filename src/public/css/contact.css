@@ -1,0 +1,103 @@
+.p-contact {
+  margin-top: 51px;
+  max-width: 972px;
+  margin: 20px auto;
+}
+.p-contact_table {
+  width: 100%;
+  border-spacing: 0 30px;
+  border-collapse: unset;
+}
+.p-contact_table_th {
+  font-size: 2rem;
+  padding-top: 10px;
+  width: 354px;
+  font-weight: normal;
+}
+.p-contact_table_th_txt {
+  color: #8B7969;
+}
+.p-contact_table_require {
+  color: #FF9494;
+}
+.p-contact_table_td {
+  width: 618px;
+}
+.p-contact_table_td.--tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-contact_table_input {
+  padding: 10px 0 10px 30px;
+  background-color: #f4f4f4;
+  font-size: 1.4rem;
+  width: 100%;
+}
+.p-contact_table_input::-moz-placeholder {
+  color: #BEB1A6;
+}
+.p-contact_table_input::placeholder {
+  color: #BEB1A6;
+}
+.p-contact_table_input.--name {
+  width: calc((99% - 44px) / 2);
+}
+.p-contact_table_input.--name:not(:first-child) {
+  margin-left: 44px;
+}
+.p-contact_table_input.--tel {
+  width: 178px;
+}
+.p-contact_table_input.--select {
+  width: 331px;
+  color: #BEB1A6;
+}
+.p-contact_table_selectWrap {
+  display: inline-block;
+  position: relative;
+}
+.p-contact_table_selectWrap::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #BEB1A6;
+  border-bottom: 0;
+}
+.p-contact_table_inputRadio {
+  padding-left: 28px;
+  position: relative;
+  color: #8B7969;
+  font-size: 1.8rem;
+}
+.p-contact_table_inputRadio:not(:first-child) {
+  margin-left: 50px;
+}
+.p-contact_table_inputRadio::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.p-contact_table_inputRadio::before {
+  background-color: #fff;
+  border: 1px solid #8B7969;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 0;
+}
+.p-contact_table_inputRadio:has(input:checked)::before {
+  background-color: #8B7969;
+}
+.p-contact_btnWrap {
+  text-align: center;
+  margin-top: 20px;
+}

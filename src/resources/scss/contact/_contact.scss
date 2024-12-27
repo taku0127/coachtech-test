@@ -1,0 +1,103 @@
+.p-contact{
+    margin-top: 51px;
+    max-width: 972px;
+    margin: 20px auto;
+    &_table{
+        width: 100%;
+        border-spacing: 0 30px;
+        border-collapse: unset;
+        &_th{
+            font-size: 2rem;
+            padding-top: 10px;
+            width: 354px;
+            font-weight: normal;
+            &_txt{
+                color: #8B7969;
+            }
+        }
+        &_require{
+            color: #FF9494;
+        }
+        &_td{
+            width: 618px;
+            &.--tel{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        &_input{
+            padding: 10px 0 10px 30px;
+            background-color: #f4f4f4;
+            font-size: 1.4rem;
+            width: 100%;
+            &::placeholder{
+                color: #BEB1A6;
+            }
+            &.--name{
+                width: calc((99% - 44px) / 2);
+                &:not(:first-child){
+                    margin-left: 44px;
+                }
+            }
+            &.--tel{
+                width: 178px;
+            }
+            &.--select{
+                width: 331px;
+                color: #BEB1A6;
+            }
+        }
+        &_selectWrap{
+            display: inline-block;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform:translateY(-50%) ;
+                right: 12px;
+                border-right: 12px solid transparent;
+                border-left: 12px solid transparent;
+                border-top: 12px solid #BEB1A6;
+                border-bottom: 0;
+            }
+        }
+        &_inputRadio{
+            padding-left: 28px;
+            position: relative;
+            color: #8B7969;
+            font-size: 1.8rem;
+            &:not(:first-child){
+                margin-left: 50px;
+            }
+            &::before {
+            content: "";
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            }
+
+            &::before {
+            background-color: #fff;
+            border: 1px solid #8B7969;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            }
+            &:has(input:checked){
+                &::before{
+                    background-color: #8B7969;
+                }
+            }
+        }
+    }
+    &_btnWrap{
+        text-align: center;
+        margin-top: 20px;
+    }
+}

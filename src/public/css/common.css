@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap);
+html {
+  font-family: "Inika";
+  font-size: 62.5%;
+}
+
+.c-header {
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid #E0DFDE;
+}
+.c-header_title {
+  font-size: 4rem;
+  color: #8B7969;
+}
+
+.c-title {
+  margin-top: 50px;
+}
+.c-title_txt {
+  font-size: 3.5rem;
+  color: #8B7969;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.c-btn {
+  padding: 10px 40px;
+  background-color: #8B7969;
+  color: #fff;
+  font-size: 20px;
+}
