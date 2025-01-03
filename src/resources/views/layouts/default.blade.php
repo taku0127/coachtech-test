@@ -8,12 +8,14 @@
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/common.css') }}" rel="stylesheet">
     @yield('css')
+    @yield('js')
 </head>
 <body>
 <header class="c-header">
     <div class="c-header_title">FashionablyLate</div>
+    @yield('header_btn')
 </header>
-<main>
+<main class="c-container">
     <div class="c-title">
         <h1 class="c-title_txt">
             @yield('h1')

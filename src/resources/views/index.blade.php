@@ -7,7 +7,7 @@
 @endsection
 @section('content')
 <div class="p-contact">
-    <form action="">
+    <form action="/confirm" method="post">
       @csrf
       <table class="p-contact_table">
         <tbody>

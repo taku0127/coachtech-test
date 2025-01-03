@@ -19312,6 +19312,32 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/scss/admin.scss":
+/*!***********************************!*\
+  !*** ./resources/scss/admin.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/scss/auth.scss":
+/*!**********************************!*\
+  !*** ./resources/scss/auth.scss ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/scss/common.scss":
 /*!************************************!*\
   !*** ./resources/scss/common.scss ***!
@@ -19669,7 +19695,9 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 			"/js/app": 0,
 /******/ 			"css/common": 0,
 /******/ 			"css/reset": 0,
-/******/ 			"css/contact": 0
+/******/ 			"css/contact": 0,
+/******/ 			"css/auth": 0,
+/******/ 			"css/admin": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -19719,10 +19747,12 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact"], () => (__webpack_require__("./resources/scss/common.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact"], () => (__webpack_require__("./resources/scss/contact.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/common","css/reset","css/contact"], () => (__webpack_require__("./resources/scss/reset.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact","css/auth","css/admin"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact","css/auth","css/admin"], () => (__webpack_require__("./resources/scss/admin.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact","css/auth","css/admin"], () => (__webpack_require__("./resources/scss/auth.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact","css/auth","css/admin"], () => (__webpack_require__("./resources/scss/common.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/common","css/reset","css/contact","css/auth","css/admin"], () => (__webpack_require__("./resources/scss/contact.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/common","css/reset","css/contact","css/auth","css/admin"], () => (__webpack_require__("./resources/scss/reset.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

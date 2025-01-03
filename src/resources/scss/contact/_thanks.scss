@@ -1,0 +1,29 @@
+.p-thanks{
+    height: 100vh;
+    position: relative;
+    &_bg{
+        font-size: 280px;
+        color: #8B79690D;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    &_contents{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    &_txt{
+        font-size: 3rem;
+        color: #8B7969;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    &_btn{
+        margin-top: 50px;
+    }
+}
