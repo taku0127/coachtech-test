@@ -67,7 +67,7 @@
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">お問い合わせの種類</th>
                 <td class="p-confirm_table_td">
-                    <input type="hidden" name="categry_id" value="{{ $contact['category_id'] }}">
+                    <input type="hidden" name="category_id" value="{{ $contact['category_id'] }}">
                     {{ $category['content'] }}
                 </td>
             </tr>
