@@ -43,3 +43,8 @@
 .p-auth_btnBox.--register {
   margin-top: 63px;
 }
+.p-auth_error {
+  font-size: 1.6rem;
+  color: red;
+  margin-top: 10px;
+}
