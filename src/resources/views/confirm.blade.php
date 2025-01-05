@@ -14,62 +14,76 @@
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">お名前</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}"> <input type="hidden" name="first_name" value="{{ $contact['last_name'] }}">
+                    {{ $contact['last_name'] }}　{{ $contact['first_name'] }}
                 </td>
             </tr>
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">性別</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
+                    @if ($contact['gender'] == 1)
+                        男性
+                    @elseif ($contact['gender'] ==2)
+                        女性
+                    @else
+                        その他
+                    @endif
                 </td>
             </tr>
 
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">メールアドレス</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="email" value="{{ $contact['email'] }}">
+                    {{ $contact['email'] }}
                 </td>
             </tr>
 
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">電話番号</th>
                 <td class="p-confirm_table_td --tel">
-                    山田　太郎
+                    <input type="hidden" name="tel" value="{{ $contact['tel1'].$contact['tel2'].$contact['tel3'] }}">
+                    {{ $contact['tel1'].$contact['tel2'].$contact['tel3'] }}
                 </td>
             </tr>
 
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">住所</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="address" value="{{ $contact['address'] }}">
+                    {{ $contact['address'] }}
                 </td>
             </tr>
 
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">建物名</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="building" value="{{ $contact['building'] }}">
+                    {{ $contact['building'] }}
                 </td>
             </tr>
 
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">お問い合わせの種類</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="categry_id" value="{{ $contact['category_id'] }}">
+                    {{ $category['content'] }}
                 </td>
             </tr>
 
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">お問い合わせ内容</th>
                 <td class="p-confirm_table_td">
-                    山田　太郎
+                    <input type="hidden" name="detail" value="{{ $contact['detail'] }}">
+                    {{ $contact['detail'] }}
                  </td>
             </tr>
         </tbody>
       </table>
       <div class="p-confirm_btnWrap">
         <input type="submit" value="送信" class="c-btn">
-        <a href="" class="p-confirm_link">修正</a>
+        <a href="/" class="p-confirm_link">修正</a>
       </div>
     </form>
 </div>
