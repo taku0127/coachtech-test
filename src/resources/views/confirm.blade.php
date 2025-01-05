@@ -14,7 +14,7 @@
             <tr class="p-confirm_table_tr">
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">お名前</th>
                 <td class="p-confirm_table_td">
-                    <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}"> <input type="hidden" name="first_name" value="{{ $contact['last_name'] }}">
+                    <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}"> <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
                     {{ $contact['last_name'] }}　{{ $contact['first_name'] }}
                 </td>
             </tr>
@@ -44,6 +44,9 @@
                 <th class="p-confirm_table_th"><p class="p-confirm_table_th_txt">電話番号</th>
                 <td class="p-confirm_table_td --tel">
                     <input type="hidden" name="tel" value="{{ $contact['tel1'].$contact['tel2'].$contact['tel3'] }}">
+                    <input type="hidden" name="tel1" value="{{ $contact['tel1'] }}">
+                    <input type="hidden" name="tel2" value="{{ $contact['tel2'] }}">
+                    <input type="hidden" name="tel3" value="{{ $contact['tel3'] }}">
                     {{ $contact['tel1'].$contact['tel2'].$contact['tel3'] }}
                 </td>
             </tr>
@@ -83,7 +86,7 @@
       </table>
       <div class="p-confirm_btnWrap">
         <input type="submit" value="送信" class="c-btn">
-        <a href="/" class="p-confirm_link">修正</a>
+        <button type="submit" name="back" href="/" class="p-confirm_link" value="back">修正</button>
       </div>
     </form>
 </div>
