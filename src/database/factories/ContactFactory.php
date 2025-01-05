@@ -23,7 +23,7 @@ class ContactFactory extends Factory
             'tel' => $this->faker->phoneNumber,
             'address' => $this->faker->address,
             'building' => $this->faker->secondaryAddress,
-            'detail' => $this->faker->text,
+            'detail' => $this->faker->realText,
         ];
     }
 }
