@@ -32,13 +32,13 @@
                 <th class="p-contact_table_th"><p class="p-contact_table_th_txt">性別 <span class="p-contact_table_require">※</span></p></th>
                 <td class="p-contact_table_td">
                     <label class="p-contact_table_inputRadio">
-                        <input type="radio" name="gender" value="1" checked>男性
+                        <input type="radio" name="gender" value="1" {{ old('gender') == 1 || old('gender') ==  "" ? 'checked' : ''}}>男性
                     </label>
                     <label class="p-contact_table_inputRadio">
-                        <input type="radio" name="gender" value="2">女性
+                        <input type="radio" name="gender" value="2" {{ old('gender') == 2 ? 'checked' : ''}}>女性
                     </label>
                     <label class="p-contact_table_inputRadio">
-                        <input type="radio" name="gender" value="3">その他
+                        <input type="radio" name="gender" value="3" {{ old('gender') == 3 ? 'checked' : ''}}>その他
                     </label>
                     @error('gender')
                     <p class="p-contact_error">
@@ -112,7 +112,7 @@
                         <select name="category_id" id="" class="p-contact_table_input --select">
                             <option value="">選択してください</option>
                             @foreach ($categories as $category)
-                            <option value="{{ $category['id'] }}">{{ $category['content'] }}</option>
+                            <option value="{{ $category['id'] }}" @if(old('category_id') == $category['id']) selected @endif>{{ $category['content'] }}</option>
 
                             @endforeach
                         </select>
