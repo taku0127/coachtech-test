@@ -23,7 +23,7 @@
 .p-contact_table_td {
   width: 618px;
 }
-.p-contact_table_td.--tel {
+.p-contact_table_td_telBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,6 +100,11 @@
 .p-contact_btnWrap {
   text-align: center;
   margin-top: 20px;
+}
+.p-contact_error {
+  font-size: 1.6rem;
+  color: red;
+  margin-top: 10px;
 }
 
 .p-confirm {

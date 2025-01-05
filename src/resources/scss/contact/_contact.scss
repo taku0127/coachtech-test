@@ -20,7 +20,7 @@
         }
         &_td{
             width: 618px;
-            &.--tel{
+            &_telBox{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -99,5 +99,10 @@
     &_btnWrap{
         text-align: center;
         margin-top: 20px;
+    }
+    &_error{
+        font-size: 1.6rem;
+        color: red;
+        margin-top: 10px;
     }
 }
