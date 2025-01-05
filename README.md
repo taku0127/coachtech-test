@@ -2,7 +2,7 @@
 
 ## 環境構築
 - Dockerビルド
-  1. git clone https://github.com/taku0127/coachtech-test.git
+  1. git clone git@github.com:taku0127/coachtech-test.git
   2. docker-compose up -d --build
   ※MySQLは、OSによって起動しない場合があるのでそれぞれのPCに合わせて docker-compose.yml ファイルを編集してください。
 - Laravel環境構築
