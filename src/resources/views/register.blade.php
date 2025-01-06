@@ -33,7 +33,7 @@
             </div>
             <div class="p-auth_inputBox">
                 <label for="password" class="p-auth_inputTitle">パスワード</label>
-                <input type="text" id="password" name="password" placeholder="例: coachtech1106" class="p-auth_input" value="{{old('password')}}">
+                <input type="password" id="password" name="password" placeholder="例: coachtech1106" class="p-auth_input" value="{{old('password')}}">
                 @error('password')
                 <p class="p-auth_error">
                 {{ $message }}
