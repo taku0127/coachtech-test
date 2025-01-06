@@ -24,6 +24,8 @@ Route::post('/thanks', [ContactController::class,'store']);
 // Route::get('/register', function () {
 //     return view('register');
 // });
-Route::get('/admin', function () {
-    return view('admin');
+Route::middleware('auth')->group(function () {
+    Route::get('/admin', function () {
+        return view('admin');
+    });
 });
