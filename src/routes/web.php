@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +26,5 @@ Route::post('/thanks', [ContactController::class,'store']);
 //     return view('register');
 // });
 Route::middleware('auth')->group(function () {
-    Route::get('/admin', function () {
-        return view('admin');
-    });
+    Route::get('/admin', [AdminController::class,'index']);
 });
