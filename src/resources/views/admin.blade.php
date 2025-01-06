@@ -9,7 +9,10 @@
     <script src="{{asset('js/script.js')}}"></script>
 @endsection
 @section('header_btn')
-<a href="" class="c-header_btn">logout</a>
+<form action="/logout" method="POST">
+    @csrf
+    <button class="c-header_btn">logout</button>
+</form>
 @endsection
 @section('content')
 <div class="p-admin">
