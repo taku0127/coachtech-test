@@ -67,6 +67,9 @@
   background-color: #8B7969;
   color: #fff;
 }
+.p-admin_pagenate_link a {
+  display: block;
+}
 .p-admin_lists {
   margin-top: 20px;
 }

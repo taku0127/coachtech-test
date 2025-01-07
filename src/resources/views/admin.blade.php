@@ -34,15 +34,8 @@
     </div>
     <div class="p-admin_btns">
         <p class="p-admin_export">エクスポート</p>
-        <ul class="p-admin_pagenate">
-            <li class="p-admin_pagenate_link"><</li>
-            <li class="p-admin_pagenate_link --active">1</li>
-            <li class="p-admin_pagenate_link">2</li>
-            <li class="p-admin_pagenate_link">3</li>
-            <li class="p-admin_pagenate_link">4</li>
-            <li class="p-admin_pagenate_link">5</li>
-            <li class="p-admin_pagenate_link">></li>
-        </ul>
+
+        {{ $contacts->links('pagenate') }}
     </div>
     <div class="p-admin_lists">
         <table class="p-admin_lists_table">
@@ -69,13 +62,6 @@
                 <td class="p-admin_lists_table_item js-modal-open"><p class="p-admin_detailBtn">詳細</p></td>
             </tr>
             @endforeach
-            <tr class="p-admin_lists_table_row">
-                <td class="p-admin_lists_table_item">山田　太郎</td>
-                <td class="p-admin_lists_table_item">男性</td>
-                <td class="p-admin_lists_table_item">test@example.com</td>
-                <td class="p-admin_lists_table_item">商品の交換について</td>
-                <td class="p-admin_lists_table_item js-modal-open"><p class="p-admin_detailBtn">詳細</p></td>
-            </tr>
         </table>
     </div>
     @foreach ($contacts as $contact)
@@ -128,47 +114,6 @@
         </div>
     </div>
     @endforeach
-    <div class="p-admin_modal js-modal" style="display: none">
-        <div class="p-admin_modal_content">
-            <p class="p-admin_modal_close js-modal-close">×</p>
-            <table class="p-admin_modal_table">
-                <tr>
-                    <th class="p-admin_modal_title">お名前</th>
-                    <td class="p-admin_modal_item">山田　太郎2</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">性別</th>
-                    <td class="p-admin_modal_item">男性</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">メールアドレス</th>
-                    <td class="p-admin_modal_item">test@example.com</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">電話番号</th>
-                    <td class="p-admin_modal_item">08012345678</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">住所</th>
-                    <td class="p-admin_modal_item">東京都渋谷区千駄ヶ谷1-2-3</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">建物名</th>
-                    <td class="p-admin_modal_item">千駄ヶ谷マンション101</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">お問い合わせの種類</th>
-                    <td class="p-admin_modal_item">商品の交換について</td>
-                </tr>
-                <tr>
-                    <th class="p-admin_modal_title">お問い合わせ内容</th>
-                    <td class="p-admin_modal_item --naiyou">届いた商品が注文した商品ではありませんでした。<br>商品の交換をお願いします。</td>
-                </tr>
-            </table>
-            <div class="p-admin_modal_btn">
-                <a href="" class="p-admin_deleteBtn">削除</a>
-            </div>
-        </div>
-    </div>
 </div>
+
 @endsection
