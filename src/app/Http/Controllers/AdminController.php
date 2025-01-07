@@ -12,4 +12,8 @@ class AdminController extends Controller
         $contacts = Contact::with('category')->orderByDesc('id')->paginate(7);
         return view('admin',compact('contacts'));
     }
+    public function destroy(Request $request){
+        Contact::find($request->id)->delete();
+        return redirect('admin')->with('success','データを削除しました');
+    }
 }

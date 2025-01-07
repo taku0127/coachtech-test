@@ -15,6 +15,11 @@
     <div class="c-header_title">FashionablyLate</div>
     @yield('header_btn')
 </header>
+@if (session('success'))
+    <div class="c-notice">
+        {{session('success')}}
+    </div>
+@endif
 <main class="c-container">
     <div class="c-title">
         <h1 class="c-title_txt">

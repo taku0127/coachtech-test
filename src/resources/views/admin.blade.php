@@ -109,7 +109,12 @@
                 </tr>
             </table>
             <div class="p-admin_modal_btn">
-                <a href="{{ $contact['id'] }}" class="p-admin_deleteBtn">削除</a>
+                <form action="/delete" method="post">
+                @csrf
+                @method('DELETE')
+                <input type="hidden" name='id' value="{{$contact['id']}}">
+                <button type="submit" class="p-admin_deleteBtn">削除</button>
+                </form>
             </div>
         </div>
     </div>
