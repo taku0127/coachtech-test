@@ -1,0 +1,83 @@
+@use 'mixin/mixin';
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+
+html{
+    font-family: "Inika";
+    font-size: 62.5%;
+}
+.c-header{
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #E0DFDE;
+    position: relative;
+    &_title{
+        font-size: 4rem;
+        color: #8B7969;
+    }
+    &_btn{
+        font-size: 2rem;
+        line-height: 2.6rem;
+        color: #D9C6B5;
+        background-color: #F0F0F099;
+        border: 1px solid #D9C6B5;
+        padding: 5px 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 96px;
+        @include mixin.sp{
+            position: initial;
+            margin: 10px 0 0 ;
+            display: inline-block;
+            transform: none;
+        }
+    }
+}
+
+.c-container{
+    padding: 50px 0 0 0;
+}
+
+
+.c-title{
+    &_txt{
+        font-size: 3.5rem;
+        color: #8B7969;
+        line-height: 4.5rem;
+        text-align: center;
+    }
+}
+
+.c-btn{
+    padding: 10px 40px;
+    background-color: #8B7969;
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    &.--search,&.--reset{
+        padding: 12px 0;
+        width: 102px;
+        text-align: center;
+        font-size: 1.8rem;
+        @include mixin.sp{
+            margin-top: 10px;
+            vertical-align: middle;
+        }
+    }
+    &.--reset{
+        background-color: #D9C6B5;
+    }
+}
+.c-notice{
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(0, 120, 0);
+}
+.u-sp{
+    @include mixin.pc{
+        display: none;
+    }
+}

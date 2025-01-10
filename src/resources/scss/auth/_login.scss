@@ -1,0 +1,57 @@
+@use '../mixin/mixin';
+.c-container{
+    background-color: #F1ECE7;
+    padding: 50px 0 139px;
+}
+.p-auth{
+    margin-top: 56px;
+    &_contents{
+        padding: 98px 0 89px;
+        width: 736px;
+        background-color: #fff;
+        border: 1px solid #C5B9B0;
+        border-radius: 10px;
+        margin: auto;
+        @include mixin.sp{
+            width: 95%;
+            padding: 30px 10px;
+        }
+    }
+    &_input{
+        background-color: #F4F4F4;
+        color: #8B7969;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        padding: 18px 0 18px 27px;
+        margin-top: 14px;
+        width: 100%;
+        &Box{
+            width: 445px;
+            margin: auto;
+            &:not(:first-of-type){
+                margin-top: 47px;
+            }
+            @include mixin.sp{
+                width: 100%;
+            }
+        }
+        &Title{
+            display: block;
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+            color: #8B7969;
+        }
+    }
+    &_btnBox{
+        text-align: center;
+        margin-top: 95px;
+        &.--register{
+            margin-top: 63px;
+        }
+    }
+    &_error{
+        font-size: 1.6rem;
+        color: red;
+        margin-top: 10px;
+    }
+}

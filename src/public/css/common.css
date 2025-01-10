@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap);
+html {
+  font-family: "Inika";
+  font-size: 62.5%;
+}
+
+.c-header {
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid #E0DFDE;
+  position: relative;
+}
+.c-header_title {
+  font-size: 4rem;
+  color: #8B7969;
+}
+.c-header_btn {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #D9C6B5;
+  background-color: rgba(240, 240, 240, 0.6);
+  border: 1px solid #D9C6B5;
+  padding: 5px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 96px;
+}
+@media screen and (max-width: 768px) {
+  .c-header_btn {
+    position: initial;
+    margin: 10px 0 0;
+    display: inline-block;
+    transform: none;
+  }
+}
+
+.c-container {
+  padding: 50px 0 0 0;
+}
+
+.c-title_txt {
+  font-size: 3.5rem;
+  color: #8B7969;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.c-btn {
+  padding: 10px 40px;
+  background-color: #8B7969;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+}
+.c-btn.--search, .c-btn.--reset {
+  padding: 12px 0;
+  width: 102px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  .c-btn.--search, .c-btn.--reset {
+    margin-top: 10px;
+    vertical-align: middle;
+  }
+}
+.c-btn.--reset {
+  background-color: #D9C6B5;
+}
+
+.c-notice {
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(0, 120, 0);
+}
+
+@media screen and (min-width: 769px) {
+  .u-sp {
+    display: none;
+  }
+}
