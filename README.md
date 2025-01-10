@@ -16,8 +16,9 @@
   7. php artisan db:seed
 - sassの仕様
   1. cd src/ (srcディレクトリに入る)
-  2. npm run watch
-  3. src/resources/scss/配下で編集
+  2. npm install
+  3. npm run watch
+  4. src/resources/scss/配下で編集
 ## 使用技術(実行環境)
 - Laravel 8.83
 - PHP 7.4
