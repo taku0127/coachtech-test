@@ -11,7 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+ const glob = require('glob');
+
+ glob.sync('resources/scss/*.scss').map(function (file) {
+   mix.sass(file, 'public/css').options({
+     processCssUrls: false,
+   });
+ });
+
+ glob.sync('resources/js/*.js').map(function (file) {
+   mix.js(file, 'public/js');
+ });

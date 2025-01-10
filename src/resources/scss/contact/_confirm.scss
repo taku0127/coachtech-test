@@ -1,0 +1,60 @@
+@use '../mixin/mixin';
+.p-confirm{
+    max-width: 972px;
+    margin: 50px auto 0;
+    &_table{
+        width: 100%;
+        &_th{
+            width: 305px;
+            padding: 20px 0 20px 62px;
+            background-color: #BAA899;
+            color: #fff;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            font-weight: normal;
+            @include mixin.sp{
+                width: 100%;
+                display: block;
+                padding: 10px;
+            }
+        }
+        &_tr{
+            border-right: 1px solid #E0DFDE;
+            width: 100%;
+            &:not(:first-child){
+                border-top: 1px solid #E0DFDE;
+            }
+        }
+        &_td{
+            width: calc(100% - 305px);
+            padding-left: 47px;
+            vertical-align: middle;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            color: #BAA899;
+            .p-confirm_table_tr:first-child &{
+                border-top: 1px solid #E0DFDE;
+            }
+            .p-confirm_table_tr:last-child &{
+                border-bottom: 1px solid #E0DFDE;
+            }
+            @include mixin.sp{
+                width: 100%;
+                display: block;
+                padding: 10px;
+            }
+        }
+    }
+    &_btnWrap{
+        text-align: center;
+        margin-top: 50px;
+    }
+    &_link{
+        text-decoration: underline;
+        color: #BAA899;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        vertical-align: middle;
+        margin-left: 52px;
+    }
+}

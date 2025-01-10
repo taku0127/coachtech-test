@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [ContactController::class,'index']);
+Route::post('/confirm', [ContactController::class,'confirm']);
+Route::post('/thanks', [ContactController::class,'store']);
+Route::get('/thanks',[ContactController::class,'thanks']);
+// Route::get('/login', function () {
+//     return view('login');
+// });
+// Route::get('/register', function () {
+//     return view('register');
+// });
+Route::middleware('auth')->group(function () {
+    Route::get('/admin', [AdminController::class,'index']);
+    Route::delete('/delete',[AdminController::class,'destroy']);
+    Route::get('/admin/search',[AdminController::class,'search']);
+    Route::get('/admin/export_csv',[AdminController::class,'exportCsv'])->name('exportCsv');
 });
