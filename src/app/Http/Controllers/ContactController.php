@@ -27,6 +27,10 @@ class ContactController extends Controller
         }
         $contact = $request->only(['last_name','first_name','gender','email','tel','address','building','category_id','detail']);
         Contact::create($contact);
+        return redirect('thanks');
+    }
+
+    public function thanks(){
         return view('thanks');
     }
 }
