@@ -6,11 +6,22 @@
   width: 1183px;
   margin: 30px auto 0;
 }
+@media screen and (max-width: 768px) {
+  .p-admin {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 .p-admin_searchBlock {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .p-admin_searchBlock {
+    display: block;
+  }
 }
 .p-admin_search_keyword {
   background-color: #FBFBFB;
@@ -25,6 +36,11 @@
 .p-admin_search_keyword::placeholder {
   color: #BEB1A6;
 }
+@media screen and (max-width: 768px) {
+  .p-admin_search_keyword {
+    width: 100%;
+  }
+}
 .p-admin_search_select {
   font-size: 1.6rem;
   padding: 12px 46px 12px 20px;
@@ -36,11 +52,22 @@
   background-position: right 15px center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .p-admin_search_select {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 .p-admin_btns {
   display: flex;
   justify-content: space-between;
   margin-top: 37px;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .p-admin_btns {
+    display: block;
+  }
 }
 .p-admin_export {
   font-size: 1.8rem;
@@ -48,10 +75,21 @@
   padding: 8px 20px;
   background-color: rgba(225, 219, 214, 0.6);
 }
+@media screen and (max-width: 768px) {
+  .p-admin_export {
+    display: inline-block;
+  }
+}
 .p-admin_pagenate {
   display: flex;
   border: 1px solid #E0DFDE;
   border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  .p-admin_pagenate {
+    margin-top: 10px;
+    display: inline-flex;
+  }
 }
 .p-admin_pagenate_link {
   width: 30px;
@@ -91,6 +129,13 @@
   padding: 17px 0 17px 50px;
   width: 20%;
 }
+@media screen and (max-width: 768px) {
+  .p-admin_lists_table_title {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+}
 .p-admin_lists_table_item {
   padding: 17px 0 17px 50px;
   width: 20%;
@@ -100,6 +145,13 @@
 }
 .p-admin_lists_table_item.--category {
   font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  .p-admin_lists_table_item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
 }
 .p-admin_detailBtn {
   font-size: 1.8rem;
@@ -123,6 +175,13 @@
   background-color: #fff;
   overflow-y: scroll;
 }
+@media screen and (max-width: 768px) {
+  .p-admin_modal_content {
+    width: 100%;
+    height: 100%;
+    padding: 143px 10px 77px;
+  }
+}
 .p-admin_modal_close {
   font-size: 3rem;
   border: 1px solid #8B7969;
@@ -142,11 +201,25 @@
   color: #8B7969;
   padding-bottom: 35px;
 }
+@media screen and (max-width: 768px) {
+  .p-admin_modal_title {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
 .p-admin_modal_item {
   width: 413px;
   font-size: 2rem;
   color: #8B7969;
   padding-left: 43px;
+}
+@media screen and (max-width: 768px) {
+  .p-admin_modal_item {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
 }
 .p-admin_modal_item.--naiyou {
   font-size: 1.8rem;

@@ -14,6 +14,12 @@
   border-radius: 10px;
   margin: auto;
 }
+@media screen and (max-width: 768px) {
+  .p-auth_contents {
+    width: 95%;
+    padding: 30px 10px;
+  }
+}
 .p-auth_input {
   background-color: #F4F4F4;
   color: #8B7969;
@@ -29,6 +35,11 @@
 }
 .p-auth_inputBox:not(:first-of-type) {
   margin-top: 47px;
+}
+@media screen and (max-width: 768px) {
+  .p-auth_inputBox {
+    width: 100%;
+  }
 }
 .p-auth_inputTitle {
   display: block;

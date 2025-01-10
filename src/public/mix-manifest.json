@@ -2,9 +2,9 @@
     "/js/app.js": "/js/app.js",
     "/js/bootstrap.js": "/js/bootstrap.js",
     "/js/script.js": "/js/script.js",
-    "/css/common.css": "/css/common.css",
     "/css/reset.css": "/css/reset.css",
     "/css/contact.css": "/css/contact.css",
     "/css/auth.css": "/css/auth.css",
-    "/css/admin.css": "/css/admin.css"
+    "/css/admin.css": "/css/admin.css",
+    "/css/common.css": "/css/common.css"
 }

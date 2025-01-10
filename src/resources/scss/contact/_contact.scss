@@ -1,3 +1,4 @@
+@use '../mixin/mixin';
 .p-contact{
     margin-top: 51px;
     max-width: 972px;
@@ -6,11 +7,18 @@
         width: 100%;
         border-spacing: 0 30px;
         border-collapse: unset;
+        @include mixin.sp{
+            padding: 0 10px;
+        }
         &_th{
             font-size: 2rem;
             padding-top: 10px;
             width: 354px;
             font-weight: normal;
+            @include mixin.sp{
+                width: 100%;
+                display: block;
+            }
             &_txt{
                 color: #8B7969;
             }
@@ -20,6 +28,11 @@
         }
         &_td{
             width: 618px;
+            @include mixin.sp{
+                width: 100%;
+                display: block;
+                margin-top: 10px;
+            }
             &_telBox{
                 display: flex;
                 justify-content: space-between;
@@ -37,20 +50,37 @@
             &.--name{
                 width: calc((99% - 44px) / 2);
                 &:not(:first-child){
-                    margin-left: 44px;
+                    @include mixin.pc{
+                        margin-left: 44px;
+                    }
+                    @include mixin.sp{
+                        margin-top: 10px;
+                    }
+                }
+                @include mixin.sp{
+                    width: 100%;
                 }
             }
             &.--tel{
                 width: 178px;
+                @include mixin.sp{
+                    width: 30%;
+                }
             }
             &.--select{
                 width: 331px;
                 color: #BEB1A6;
+                @include mixin.sp{
+                    width: 100%;
+                }
             }
         }
         &_selectWrap{
             display: inline-block;
             position: relative;
+            @include mixin.sp{
+                width: 100%;
+            }
             &::after {
                 content: "";
                 display: block;
@@ -71,6 +101,9 @@
             font-size: 1.8rem;
             &:not(:first-child){
                 margin-left: 50px;
+                @include mixin.sp{
+                    margin-left: 20px;
+                }
             }
             &::before {
             content: "";

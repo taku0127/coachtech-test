@@ -26,6 +26,14 @@ html {
   transform: translateY(-50%);
   right: 96px;
 }
+@media screen and (max-width: 768px) {
+  .c-header_btn {
+    position: initial;
+    margin: 10px 0 0;
+    display: inline-block;
+    transform: none;
+  }
+}
 
 .c-container {
   padding: 50px 0 0 0;
@@ -51,6 +59,12 @@ html {
   text-align: center;
   font-size: 1.8rem;
 }
+@media screen and (max-width: 768px) {
+  .c-btn.--search, .c-btn.--reset {
+    margin-top: 10px;
+    vertical-align: middle;
+  }
+}
 .c-btn.--reset {
   background-color: #D9C6B5;
 }
@@ -61,4 +75,10 @@ html {
   font-weight: bold;
   color: #fff;
   background-color: rgb(0, 120, 0);
+}
+
+@media screen and (min-width: 769px) {
+  .u-sp {
+    display: none;
+  }
 }

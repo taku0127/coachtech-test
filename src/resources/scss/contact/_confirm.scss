@@ -1,3 +1,4 @@
+@use '../mixin/mixin';
 .p-confirm{
     max-width: 972px;
     margin: 50px auto 0;
@@ -11,6 +12,11 @@
             font-size: 2rem;
             line-height: 2.6rem;
             font-weight: normal;
+            @include mixin.sp{
+                width: 100%;
+                display: block;
+                padding: 10px;
+            }
         }
         &_tr{
             border-right: 1px solid #E0DFDE;
@@ -31,6 +37,11 @@
             }
             .p-confirm_table_tr:last-child &{
                 border-bottom: 1px solid #E0DFDE;
+            }
+            @include mixin.sp{
+                width: 100%;
+                display: block;
+                padding: 10px;
             }
         }
     }

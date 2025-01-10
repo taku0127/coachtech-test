@@ -1,15 +1,23 @@
+@use 'mixin/mixin';
 .c-container{
     padding-top: 40px;
 }
 .p-admin{
     width: 1183px;
     margin: 30px auto 0;
+    @include mixin.sp{
+        width: 100%;
+        padding: 0 10px;
+    }
     &_search{
         &Block{
             display: flex;
             justify-content: space-between;
             width: 100%;
             align-items: center;
+            @include mixin.sp{
+                display: block;
+            }
         }
         &_keyword{
             background-color: #FBFBFB;
@@ -19,6 +27,9 @@
             width: 347px;
             &::placeholder{
                 color: #BEB1A6;
+            }
+            @include mixin.sp{
+                width: 100%;
             }
         }
         &_select{
@@ -32,7 +43,10 @@
             background-image: url(/img/arrow-under.svg);
             background-position: right 15px center;
             background-repeat: no-repeat;
-
+            @include mixin.sp{
+                width: 100%;
+                margin-top: 10px;
+            }
         }
     }
     &_btns{
@@ -40,17 +54,27 @@
         justify-content: space-between;
         margin-top: 37px;
         align-items: center;
+        @include mixin.sp{
+            display: block;
+        }
     }
     &_export{
         font-size: 1.8rem;
         color: #8B7969;
         padding: 8px 20px;
         background-color: #E1DBD699;
+        @include mixin.sp{
+            display: inline-block;
+        }
     }
     &_pagenate{
         display: flex;
         border: 1px solid #E0DFDE;
         border-radius: 5px;
+        @include mixin.sp{
+            margin-top: 10px;
+            display: inline-flex;
+        }
         &_link{
             width: 30px;
             text-align: center;
@@ -89,6 +113,11 @@
             &_title{
                 padding: 17px 0 17px 50px;
                 width: 20%;
+                @include mixin.sp{
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                }
             }
             &_item{
                 padding: 17px 0 17px 50px;
@@ -98,6 +127,11 @@
                 vertical-align: middle;
                 &.--category{
                     font-size: 1.8rem;
+                }
+                @include mixin.sp{
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
                 }
             }
         }
@@ -124,6 +158,11 @@
             padding: 143px 63px 77px 99px;
             background-color: #fff;
             overflow-y: scroll;
+            @include mixin.sp{
+                width: 100%;
+                height: 100%;
+                padding: 143px 10px 77px;
+            }
         }
         &_close{
             font-size: 3rem;
@@ -143,12 +182,22 @@
             font-weight: bold;
             color: #8B7969;
             padding-bottom: 35px;
+            @include mixin.sp{
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+            }
         }
         &_item{
             width: 413px;
             font-size: 2rem;
             color: #8B7969;
             padding-left: 43px;
+            @include mixin.sp{
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+            }
             &.--naiyou{
                 font-size: 1.8rem;
                 line-height: 2.8rem;

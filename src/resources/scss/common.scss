@@ -1,3 +1,4 @@
+@use 'mixin/mixin';
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 
 
@@ -25,6 +26,12 @@ html{
         top: 50%;
         transform: translateY(-50%);
         right: 96px;
+        @include mixin.sp{
+            position: initial;
+            margin: 10px 0 0 ;
+            display: inline-block;
+            transform: none;
+        }
     }
 }
 
@@ -53,6 +60,10 @@ html{
         width: 102px;
         text-align: center;
         font-size: 1.8rem;
+        @include mixin.sp{
+            margin-top: 10px;
+            vertical-align: middle;
+        }
     }
     &.--reset{
         background-color: #D9C6B5;
@@ -64,4 +75,9 @@ html{
     font-weight: bold;
     color: #fff;
     background-color: rgb(0, 120, 0);
+}
+.u-sp{
+    @include mixin.pc{
+        display: none;
+    }
 }

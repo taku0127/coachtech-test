@@ -1,3 +1,4 @@
+@use '../mixin/mixin';
 .c-container{
     background-color: #F1ECE7;
     padding: 50px 0 139px;
@@ -11,6 +12,10 @@
         border: 1px solid #C5B9B0;
         border-radius: 10px;
         margin: auto;
+        @include mixin.sp{
+            width: 95%;
+            padding: 30px 10px;
+        }
     }
     &_input{
         background-color: #F4F4F4;
@@ -25,6 +30,9 @@
             margin: auto;
             &:not(:first-of-type){
                 margin-top: 47px;
+            }
+            @include mixin.sp{
+                width: 100%;
             }
         }
         &Title{

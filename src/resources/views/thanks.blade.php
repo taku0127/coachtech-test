@@ -13,7 +13,7 @@
     <main>
         <div class="p-thanks">
             <p class="p-thanks_bg">
-                Thank you
+                Thank <br class="u-sp">you
             </p>
             <div class="p-thanks_contents">
                 <p class="p-thanks_txt">
