@@ -29,4 +29,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class,'index']);
     Route::delete('/delete',[AdminController::class,'destroy']);
     Route::get('/admin/search',[AdminController::class,'search']);
+    Route::get('/admin/export_csv',[AdminController::class,'exportCsv'])->name('exportCsv');
 });

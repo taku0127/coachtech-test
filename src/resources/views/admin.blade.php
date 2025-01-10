@@ -43,7 +43,9 @@
         </form>
     </div>
     <div class="p-admin_btns">
-        <p class="p-admin_export">エクスポート</p>
+        <a href="{{ route('exportCsv',request()->query->all()) }}" class="p-admin_export">
+            エクスポート
+        </a>
 
         {{ $contacts->appends(request()->query())->links('pagenate') }}
     </div>
