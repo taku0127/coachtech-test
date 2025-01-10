@@ -17,25 +17,35 @@
 @section('content')
 <div class="p-admin">
     <div class="p-admin_search">
-        <form action="" method="get">
+        <form action="/admin/search" method="get">
+            @csrf
             <div class="p-admin_searchBlock">
-                <input type="text" name="text" class="p-admin_search_keyword" placeholder="名前やメールアドレスを入力してください ">
-                <select name="" id="" class="p-admin_search_select">
+                <input type="text" name="keyword" class="p-admin_search_keyword" placeholder="名前やメールアドレスを入力してください ">
+                <select name="gender" class="p-admin_search_select">
                     <option value="">性別</option>
+                    <option value="">全て</option>
+                    <option value="1">男性</option>
+                    <option value="2">女性</option>
+                    <option value="3">その他</option>
                 </select>
-                <select name="" id="" class="p-admin_search_select">
+                <select name="category_id" id="" class="p-admin_search_select">
                     <option value="">お問い合わせの種類 </option>
+                    @foreach ($categories as $category)
+                    <option value="{{ $category['id'] }}">
+                        {{ $category['content'] }}
+                    </option>
+                    @endforeach
                 </select>
-                <input type="date" class="p-admin_search_select">
+                <input type="date" class="p-admin_search_select" name="date">
                 <input type="submit" value="検索" class="c-btn --search">
-                <a href="" class="c-btn --reset">リセット</a>
+                <a href="/admin" class="c-btn --reset">リセット</a>
             </div>
         </form>
     </div>
     <div class="p-admin_btns">
         <p class="p-admin_export">エクスポート</p>
 
-        {{ $contacts->links('pagenate') }}
+        {{ $contacts->appends(request()->query())->links('pagenate') }}
     </div>
     <div class="p-admin_lists">
         <table class="p-admin_lists_table">
