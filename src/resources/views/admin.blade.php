@@ -70,7 +70,7 @@
                     @endif
                 </td>
                 <td class="p-admin_lists_table_item">{{ $contact['email'] }}</td>
-                <td class="p-admin_lists_table_item">{{ $contact->category->content }}</td>
+                <td class="p-admin_lists_table_item --category">{{ $contact->category->content }}</td>
                 <td class="p-admin_lists_table_item js-modal-open"><p class="p-admin_detailBtn">詳細</p></td>
             </tr>
             @endforeach

@@ -88,12 +88,18 @@
   border-right: 1px solid #E0DFDE;
 }
 .p-admin_lists_table_title {
-  padding: 17px 55px;
+  padding: 17px 0 17px 50px;
+  width: 20%;
 }
 .p-admin_lists_table_item {
-  padding: 17px 55px;
+  padding: 17px 0 17px 50px;
+  width: 20%;
+  word-break: break-all;
   color: #8B7969;
   vertical-align: middle;
+}
+.p-admin_lists_table_item.--category {
+  font-size: 1.8rem;
 }
 .p-admin_detailBtn {
   font-size: 1.8rem;
